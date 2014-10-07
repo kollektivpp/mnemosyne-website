@@ -1,39 +1,22 @@
 /*
-Error: Undefined mixin 'transition'.
-        on line 7 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss, in `transition'
-        from line 7 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss
+Error: Undefined variable: "$colorBackgroundFooter".
+        on line 4 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss
 
+1: footer {
 2:     position: fixed;
-3:     top: 0px;
-4: 
-5:     .logo {
-6: 
-7:         @include transition(width 0.2s linear, height 0.2s linear);
-8: 
-9:         &.small {
-10:             width: 50px;
-11:             height: 50px;
-12:         }
+3:     bottom: 0px;
+4:     background-color: $colorBackgroundFooter;
+5: 
+6:     @include transition(bottom 0.3s ease-in-out);
+7: 
+8:     &.hidden {
+9:         // This default value should be overwritten by JS on page load
 
 Backtrace:
-/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss:7:in `transition'
-/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss:7
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:332:in `block in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:330:in `visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss:4
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:378:in `visit_prop'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -85,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 7 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss, in `transition'\A         from line 7 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss\A \A 2:     position: fixed;\A 3:     top: 0px;\A 4: \A 5:     .logo {\A 6: \A 7:         @include transition(width 0.2s linear, height 0.2s linear);\A 8: \A 9:         &.small {\A 10:             width: 50px;\A 11:             height: 50px;\A 12:         }"; }
+  content: "Error: Undefined variable: \"$colorBackgroundFooter\".\A         on line 4 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss\A \A 1: footer {\A 2:     position: fixed;\A 3:     bottom: 0px;\A 4:     background-color: $colorBackgroundFooter;\A 5: \A 6:     @include transition(bottom 0.3s ease-in-out);\A 7: \A 8:     &.hidden {\A 9:         // This default value should be overwritten by JS on page load"; }

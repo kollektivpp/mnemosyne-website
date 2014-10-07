@@ -66,3 +66,48 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/** COLORS **/
+/** BASIC ELEMENTS **/
+/* line 11, ../sass/index.scss */
+html {
+  background-color: #000000;
+}
+
+/* line 1, ../sass/header.scss */
+header {
+  position: fixed;
+  top: 0px;
+}
+/* line 5, ../sass/header.scss */
+header .logo {
+  -moz-transition: width 0.2s linear, height 0.2s linear;
+  -o-transition: width 0.2s linear, height 0.2s linear;
+  -webkit-transition: width 0.2s linear, height 0.2s linear;
+  transition: width 0.2s linear, height 0.2s linear;
+}
+/* line 9, ../sass/header.scss */
+header .logo.small {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 1, ../sass/footer.scss */
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff34f;
+  -moz-transition: bottom 0.3s ease-in-out;
+  -o-transition: bottom 0.3s ease-in-out;
+  -webkit-transition: bottom 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
+}
+/* line 8, ../sass/footer.scss */
+footer.hidden {
+  bottom: -130px;
+}
+
+/* line 14, ../sass/content.scss */
+section img {
+  width: 300px;
+}

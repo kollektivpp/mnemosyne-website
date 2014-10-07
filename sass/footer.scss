@@ -1,0 +1,12 @@
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: $colorBackgroundFooter;
+
+    @include transition(bottom 0.3s ease-in-out);
+
+    &.hidden {
+        // This default value should be overwritten by JS on page load
+        bottom: -130px;
+    }
+}

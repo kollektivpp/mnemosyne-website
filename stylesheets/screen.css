@@ -68,28 +68,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /** COLORS **/
+/** FONTS **/
 /** BASIC ELEMENTS **/
-/* line 11, ../sass/index.scss */
+/* line 43, ../sass/index.scss */
 html {
   background-color: #000000;
+}
+
+/* line 48, ../sass/index.scss */
+body {
+  padding-top: 10px;
 }
 
 /* line 1, ../sass/header.scss */
 header {
   position: fixed;
   top: 0px;
+  width: 100%;
 }
-/* line 5, ../sass/header.scss */
+/* line 6, ../sass/header.scss */
 header .logo {
+  width: 142px;
+  height: 142px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   -moz-transition: width 0.2s linear, height 0.2s linear;
   -o-transition: width 0.2s linear, height 0.2s linear;
   -webkit-transition: width 0.2s linear, height 0.2s linear;
   transition: width 0.2s linear, height 0.2s linear;
 }
-/* line 9, ../sass/header.scss */
+/* line 14, ../sass/header.scss */
 header .logo.small {
-  width: 50px;
-  height: 50px;
+  width: 71px;
+  height: 71px;
+}
+/* line 20, ../sass/header.scss */
+header .button-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 29px;
+  height: 29px;
+  background-image: url("../images/info_icon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /* line 1, ../sass/footer.scss */
@@ -104,10 +127,77 @@ footer {
 }
 /* line 8, ../sass/footer.scss */
 footer.hidden {
-  bottom: -130px;
+  bottom: -330px;
 }
 
-/* line 14, ../sass/content.scss */
+/* line 1, ../sass/content.scss */
+section {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 8, ../sass/content.scss */
+section h1 {
+  font-family: Fira Mono, Mono;
+  font-size: 28px;
+  color: #fff34f;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  max-width: 50%;
+  margin-left: 25%;
+}
+/* line 17, ../sass/content.scss */
+section h1.first-headline {
+  font-family: Fira Mono, Mono;
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 28px;
+  max-width: 60%;
+}
+/* line 23, ../sass/content.scss */
+section h2 {
+  font-family: Fira Sans, Sans;
+  font-size: 16px;
+  color: #fff34f;
+  line-height: 19px;
+  margin-bottom: 30px;
+  max-width: 65%;
+  margin-left: 25%;
+}
+/* line 30, ../sass/content.scss */
+section .text-wrapper {
+  float: left;
+}
+@media (min-width: 615px) {
+  /* line 30, ../sass/content.scss */
+  section .text-wrapper {
+    width: 35%;
+    min-width: 200px;
+  }
+}
+/* line 39, ../sass/content.scss */
+section p {
+  font-family: Fira Sans, Sans;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+/* line 43, ../sass/content.scss */
+section p a {
+  text-decoration: none;
+  color: #fff34f;
+}
+/* line 49, ../sass/content.scss */
 section img {
-  width: 300px;
+  width: 100%;
+}
+@media (min-width: 615px) {
+  /* line 49, ../sass/content.scss */
+  section img {
+    width: 65%;
+  }
 }

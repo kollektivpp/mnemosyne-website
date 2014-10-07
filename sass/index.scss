@@ -2,9 +2,41 @@
 /** COLORS **/
 $colorBackground: #000000;
 $colorBackgroundFooter: #fff34f;
-$colorTextMain: #ffffff;
-$colorTextSecondary: #fff34f;
-$colorTextFooter: #000000;
+$colorTextWhite: #ffffff;
+$colorTextYellow: #fff34f;
+$colorTextBlack: #000000;
+
+/** FONTS **/
+@mixin fontSansWhite($fontSize, $lineHeight) {
+    font-family: Fira Sans, Sans;
+    font-size: $fontSize;
+    color: $colorTextWhite;
+    line-height: $lineHeight;
+}
+@mixin fontSansYellow($fontSize, $lineHeight) {
+    font-family: Fira Sans, Sans;
+    font-size: $fontSize;
+    color: $colorTextYellow;
+    line-height: $lineHeight;
+}
+@mixin fontMonoBlack($fontSize, $lineHeight) {
+    font-family: Fira Mono, Mono;
+    font-size: $fontSize;
+    color: $colorTextBlack;
+    line-height: $lineHeight;
+}
+@mixin fontMonoWhite($fontSize, $lineHeight) {
+    font-family: Fira Mono, Mono;
+    font-size: $fontSize;
+    color: $colorTextWhite;
+    line-height: $lineHeight;
+}
+@mixin fontMonoYellow($fontSize, $lineHeight) {
+    font-family: Fira Mono, Mono;
+    font-size: $fontSize;
+    color: $colorTextYellow;
+    line-height: $lineHeight;
+}
 
 /** BASIC ELEMENTS **/
 
@@ -14,5 +46,5 @@ html {
 }
 
 body {
-
+    padding-top: 10px;
 }

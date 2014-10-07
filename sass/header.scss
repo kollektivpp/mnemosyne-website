@@ -1,19 +1,31 @@
 header {
     position: fixed;
     top: 0px;
+    width: 100%;
 
     .logo {
-
+        width: 142px;
+        height: 142px;
+        background-image: url('../images/logo.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
         @include transition(width 0.2s linear, height 0.2s linear);
 
         &.small {
-            width: 50px;
-            height: 50px;
+            width: 71px;
+            height: 71px;
         }
     }
 
     .button-info {
-
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 29px;
+        height: 29px;
+        background-image: url('../images/info_icon.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .button-mail {

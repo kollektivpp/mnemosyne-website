@@ -1,17 +1,56 @@
 section {
-    h1 {
 
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h1 {
+        @include fontMonoYellow(28px, 28px);
+        text-align: center;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+
+        max-width: 50%;
+        margin-left: 25%;
+
+        &.first-headline {
+            @include fontMonoWhite(28px, 28px);
+            max-width: 60%;
+        }
     }
 
     h2 {
+        @include fontSansYellow(16px, 19px);
+        margin-bottom: 30px;
+        max-width: 65%;
+        margin-left: 25%;
+    }
 
+    .text-wrapper {
+        float: left;
+
+        @media (min-width: 615px) {
+            width: 35%;
+            min-width: 200px;
+        }
     }
 
     p {
+        @include fontSansWhite(14px, 17px);
+        margin-bottom: 8px;
 
+        a {
+            text-decoration: none;
+            color: $colorTextYellow;
+        }
     }
 
     img {
-        width: 300px;
+        width: 100%;
+
+        @media (min-width: 615px) {
+            width: 65%;
+        }
     }
 }

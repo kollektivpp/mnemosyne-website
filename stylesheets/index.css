@@ -1,6 +1,12 @@
 /** COLORS **/
+/** FONTS **/
 /** BASIC ELEMENTS **/
-/* line 11, ../sass/index.scss */
+/* line 43, ../sass/index.scss */
 html {
   background-color: #000000;
+}
+
+/* line 48, ../sass/index.scss */
+body {
+  padding-top: 10px;
 }

@@ -40,11 +40,21 @@ $colorTextBlack: #000000;
 
 /** BASIC ELEMENTS **/
 
+* {
+    -webkit-text-size-adjust: none;
+}
+
 html {
     background-color: $colorBackground;
-    // overflow: hidden;
+
 }
 
 body {
-    padding-top: 10px;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
 }

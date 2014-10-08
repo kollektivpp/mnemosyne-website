@@ -1,6 +1,7 @@
 footer {
     position: fixed;
     bottom: 0px;
+    width: 100%;
     background-color: $colorBackgroundFooter;
 
     @include transition(bottom 0.3s ease-in-out);

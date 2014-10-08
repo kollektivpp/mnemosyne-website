@@ -12,72 +12,88 @@
     <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
 <body>
-    <header>
-        <div class="logo"></div>
-        <div class="button-info"></div>
-    </header>
+    <div class="content">
+        <header>
+            <div class="logo"></div>
+            <div class="button-info"></div>
+            <a href="mailto:mail@mnemosyne-app.de">
+                <div class="button-mail"></div>
+            </a>
+        </header>
 
-    <section id="overview">
-        <h1 class="first-headline">Archive durchstöbern, neues Denken</h1>
-        <h2>Mnemosyne ermöglicht einen alternativen Zugang zu digitalisierten Archiven durch den spannenden Moment des Stöberns und macht das Potential gesammelten Wissens sichtbar – als Browser-App und Rauminstallation.</h2>
-        <div class="text-wrapper">
-            <p>Archive werden mit steigender Komplexität spannender aber auch schwieriger zugänglich. Wie kann ich nach etwas suchen, dass ich nicht kenne? Wie können Inhalte dargestellt werden, die den Nutzer animieren feste Denkstrukturen zu überwinden?</p>
-            <p>Ziel ist es dem Betrachter ein Stöbern zu ermöglichen und Schätze aus dem Archiv ins Gedächtnis zu rufen. Wie in der Bibliothek wahllos ins Regal greifen und eine Kostbarkeit finden, oder das Wikipedia-Hyperlink-Hopping.</p>
-        </div>
-        <img src="images/3d_ansicht_3.jpg" alt="Übersicht">
-    </section>
+        <section id="overview">
+            <h1 class="first-headline">Archive durchstöbern, neues Denken</h1>
+            <h2>Mnemosyne ermöglicht einen alternativen Zugang zu digitalisierten Archiven durch den spannenden Moment des Stöberns und macht das Potential gesammelten Wissens sichtbar – als Browser-App und Rauminstallation.</h2>
+            <div class="flex-wrapper">
+                <div class="text-wrapper">
+                    <p>Archive werden mit steigender Komplexität spannender aber auch schwieriger zugänglich. Wie kann ich nach etwas suchen, dass ich nicht kenne? Wie können Inhalte dargestellt werden, die den Nutzer animieren feste Denkstrukturen zu überwinden?</p>
+                    <p>Ziel ist es dem Betrachter ein Stöbern zu ermöglichen und Schätze aus dem Archiv ins Gedächtnis zu rufen. Wie in der Bibliothek wahllos ins Regal greifen und eine Kostbarkeit finden, oder das Wikipedia-Hyperlink-Hopping.</p>
+                </div>
+                <img src="images/3d_ansicht_3.jpg" alt="Übersicht">
+            </div>
+        </section>
 
-    <section id="collage">
-        <h1>Die Collage</h1>
-        <div class="text-wrapper">
-            <p>Die Arrangements unterschiedlichster Texte und Bilder schaffen einen einfachen und dennoch komplexen Einstieg in die Inhalte. Die Collage ist das Ergebnis des Suchalgorithmus, der unter <a href="#concept">Prinzip</a> erklärt wird.</p>
-            <p>Anders als eine Google-Ergebnisliste, möchte die Collage nicht versuchen die Gesamtheit abzubilden, sondern einen visuellen Zugang ermöglichen. Trotzdem existiert zu jedem Element der Collage ein umfangreicher Wissensspeicher. Die angezeigte Information ist nur das Sprungbrett.</p>
-            <p>Die Komplexität ergibt sich aus der Verwandtschaft der Information. Die Collage ist eine abstrakte Visualisierung der Zusammengehörigkeit. Diese Rätselhaftigkeit verleitet den Betrachter zum Suchen, vielleicht zum Aufstellen von Hypothesen. Sind Muster erkennbar? Lassen sich klare Bezüge herstellen, inhaltlich oder visuell? Oder verliert sich die Collage in Beliebigkeit? Faszinierend ist die Möglichkeit etwas neues oder vergessenes zu entdecken: Sei es ein unbeachteter Zusammenhang, eine zusätzliche Bedeutung oder ein Aha-Effekt.</p>
-            <p>Die Collage ist eine Schatzkarte, deren Ziel vielleicht nicht existiert, aber die Möglichkeit einer Entdeckung fesselt uns.</p>
-        </div>
-        <img src="images/screenshot_search.png" alt="Die Collage">
-    </section>
+        <section id="collage">
+            <h1>Die Collage</h1>
+            <div class="flex-wrapper">
+                <div class="text-wrapper">
+                    <p>Die Arrangements unterschiedlichster Texte und Bilder schaffen einen einfachen und dennoch komplexen Einstieg in die Inhalte. Die Collage ist das Ergebnis des Suchalgorithmus, der unter <a href="#concept">Prinzip</a> erklärt wird.</p>
+                    <p>Anders als eine Google-Ergebnisliste, möchte die Collage nicht versuchen die Gesamtheit abzubilden, sondern einen visuellen Zugang ermöglichen. Trotzdem existiert zu jedem Element der Collage ein umfangreicher Wissensspeicher. Die angezeigte Information ist nur das Sprungbrett.</p>
+                    <p>Die Komplexität ergibt sich aus der Verwandtschaft der Information. Die Collage ist eine abstrakte Visualisierung der Zusammengehörigkeit. Diese Rätselhaftigkeit verleitet den Betrachter zum Suchen, vielleicht zum Aufstellen von Hypothesen. Sind Muster erkennbar? Lassen sich klare Bezüge herstellen, inhaltlich oder visuell? Oder verliert sich die Collage in Beliebigkeit? Faszinierend ist die Möglichkeit etwas neues oder vergessenes zu entdecken: Sei es ein unbeachteter Zusammenhang, eine zusätzliche Bedeutung oder ein Aha-Effekt.</p>
+                    <p>Die Collage ist eine Schatzkarte, deren Ziel vielleicht nicht existiert, aber die Möglichkeit einer Entdeckung fesselt uns.</p>
+                </div>
+                <img src="images/screenshot_search.png" alt="Die Collage">
+                </div>
+        </section>
 
-    <section id="concept">
-        <h1>Das Prinzip</h1>
-        <div class="text-wrapper">
-            <p>Die Ergebnisse ergeben sich durch die einen mehrstufigen Suchalgorithmus.</p>
-            <p>Ein vorher eingegebener Suchbegriff, ergibt eine Anzahl von Ergebnissen, die Metadaten. Aus diesen werden zufällig 5 Informationen ausgewählt, die widerum als Suchbegriffe dienen. Aus den sich daraus ergebenen Metadaten wird wiederum jeweils eine Information zum Suchbegriff.</p>
-            <p>Dieser Vorgang wiederholt sich bis zu 5 mal. Von der Häufigkeit der Wiederholung hängt ab wie stark das Ergebniss vom Suchbegriff entfernt ist, bzw. wie offensichtlich sie miteinander „verwandt“ sind.</p>
-            <p>Daraus ergeben sich 5 Verwandschaftsgrade.</p>
-            <p>Diese Methode ermöglicht es ein möglichst großes Spektrum des Archives anzutasten. So wird es auch möglich an Informationen zu gelangen, die außerhalb des persönlichen Suchradius liegen.</p>
-        </div>
-        <img src="images/archivehopping.png" alt="Das Prinzip">
-    </section>
+        <section id="concept">
+            <h1>Das Prinzip</h1>
+            <div class="flex-wrapper">
+                <div class="text-wrapper">
+                    <p>Die Ergebnisse ergeben sich durch die einen mehrstufigen Suchalgorithmus.</p>
+                    <p>Ein vorher eingegebener Suchbegriff, ergibt eine Anzahl von Ergebnissen, die Metadaten. Aus diesen werden zufällig 5 Informationen ausgewählt, die widerum als Suchbegriffe dienen. Aus den sich daraus ergebenen Metadaten wird wiederum jeweils eine Information zum Suchbegriff.</p>
+                    <p>Dieser Vorgang wiederholt sich bis zu 5 mal. Von der Häufigkeit der Wiederholung hängt ab wie stark das Ergebniss vom Suchbegriff entfernt ist, bzw. wie offensichtlich sie miteinander „verwandt“ sind.</p>
+                    <p>Daraus ergeben sich 5 Verwandschaftsgrade.</p>
+                    <p>Diese Methode ermöglicht es ein möglichst großes Spektrum des Archives anzutasten. So wird es auch möglich an Informationen zu gelangen, die außerhalb des persönlichen Suchradius liegen.</p>
+                </div>
+                <img src="images/archivehopping.png" alt="Das Prinzip">
+            </div>
+        </section>
 
-    <section id="wheel">
-        <h1>Das Drehrad</h1>
-        <div class="text-wrapper">
-            <p>Ein besonderes Element der Bedienung ist das Drehrad, über das der Verwandtschaftsgrad ausgewählt werden kann.</p>
-            <p>Die Möglichkeit die Inhaltsbildung zu beeinflussen, funktioniert als indirekte Aufforderung sich vom Offensichtlichen zu entfernen. Ziel ist es den Nutzer zum Stöbern zu animieren und ihn auf unbekanntes Terrain zu leiten.</p>
-            <p>So wird ein einfacher Zugang zu einem komplexen Archiv möglich, ohne von einer Informationsflut abgeschreckt zu werden. Verborgene Schätze, die in der Masse vielleicht vom Vergessen bedroht sind, da eine bewusste Suche nicht stattfindet, können so ins Bewusstsein rücken.</p>
-        </div>
-        <img src="images/controller_app.png" alt="Das Drehrad">
-    </section>
+        <section id="wheel">
+            <h1>Das Drehrad</h1>
+            <div class="flex-wrapper">
+                <div class="text-wrapper">
+                    <p>Ein besonderes Element der Bedienung ist das Drehrad, über das der Verwandtschaftsgrad ausgewählt werden kann.</p>
+                    <p>Die Möglichkeit die Inhaltsbildung zu beeinflussen, funktioniert als indirekte Aufforderung sich vom Offensichtlichen zu entfernen. Ziel ist es den Nutzer zum Stöbern zu animieren und ihn auf unbekanntes Terrain zu leiten.</p>
+                    <p>So wird ein einfacher Zugang zu einem komplexen Archiv möglich, ohne von einer Informationsflut abgeschreckt zu werden. Verborgene Schätze, die in der Masse vielleicht vom Vergessen bedroht sind, da eine bewusste Suche nicht stattfindet, können so ins Bewusstsein rücken.</p>
+                </div>
+                <img src="images/controller_app.png" alt="Das Drehrad">
+            </div>
+        </section>
 
-    <section id="meta">
-        <h1>Die Meta-Ebene</h1>
-        <div class="text-wrapper">
-            <p>Der Suchalgorithmus ist für den Nutzer über die Collage nicht nachvollziehbar. In der Metaebene kann dieser Prozess aber sichtbar gemacht werden. Die internen Suchabfragen und Zufallsentscheidungen werden protokolliert und visualisiert. So ist ein tieferes Verständnis der Anwendung möglich.</p>
-            <p>Der Nutzer kann durch diese Transparenz bewerten, wie er mit den Ergebnissen umgeht. In diesem Moment wird der Nutzer vom Konsumenten zum kritischen Teilnehmer.</p>
-        </div>
-        <img src="images/screenshot_meta.png" alt="Die Meta-Ebene">
-    </section>
+        <section id="meta">
+            <h1>Die Meta-Ebene</h1>
+            <div class="flex-wrapper">
+                <div class="text-wrapper">
+                    <p>Der Suchalgorithmus ist für den Nutzer über die Collage nicht nachvollziehbar. In der Metaebene kann dieser Prozess aber sichtbar gemacht werden. Die internen Suchabfragen und Zufallsentscheidungen werden protokolliert und visualisiert. So ist ein tieferes Verständnis der Anwendung möglich.</p>
+                    <p>Der Nutzer kann durch diese Transparenz bewerten, wie er mit den Ergebnissen umgeht. In diesem Moment wird der Nutzer vom Konsumenten zum kritischen Teilnehmer.</p>
+                </div>
+                <img src="images/screenshot_meta.png" alt="Die Meta-Ebene">
+            </div>
+        </section>
 
-    <section id="installation">
-        <h1>Die Installation</h1>
-        <div class="text-wrapper">
-            <p>Museen, aber auch Bibliotheken haben einen begrenzten Raum um ihren Bestand zu präsentieren. Oft schlummern in den Kellern spannende Schätze. Mit der Digitalisierung ergeben sich neue Möglichkeiten, wie z.B eine interaktive Installation.</p>
-            <p>Eine einfache Modifizierung der Browser-App macht Mnemosyne zur Raumprojektion. Bedient wird das Programm uüer eine dafür entwickelte Kontrollstation. Dieses Instrument läd mit seinen Bedienelementen zur Benutzung ein. Die haptische Erfahrung ist ein wichtiger Moment. Es ist eine Neuinterpretation des Gefühls sich durch einen Fundus zu wühlen und die Dinge zu drehen und wenden.</p>
-        </div>
-        <img src="images/3d_ansicht_2.jpg" alt="Die Installation">
-    </section>
-
+        <section id="installation">
+            <h1>Die Installation</h1>
+            <div class="flex-wrapper">
+                <div class="text-wrapper">
+                    <p>Museen, aber auch Bibliotheken haben einen begrenzten Raum um ihren Bestand zu präsentieren. Oft schlummern in den Kellern spannende Schätze. Mit der Digitalisierung ergeben sich neue Möglichkeiten, wie z.B eine interaktive Installation.</p>
+                    <p>Eine einfache Modifizierung der Browser-App macht Mnemosyne zur Raumprojektion. Bedient wird das Programm uüer eine dafür entwickelte Kontrollstation. Dieses Instrument läd mit seinen Bedienelementen zur Benutzung ein. Die haptische Erfahrung ist ein wichtiger Moment. Es ist eine Neuinterpretation des Gefühls sich durch einen Fundus zu wühlen und die Dinge zu drehen und wenden.</p>
+                </div>
+                <img src="images/3d_ansicht_2.jpg" alt="Die Installation">
+            </div>
+        </section>
+    </div>
     <footer class="hidden">
         <div>
             <p>Entstanden ist dieses Projekt während des „Coding Da Vinci“ Kultur-Hackathons 2014. Die Digitalisierung des Kulturgutes öffnet neue Möglichkeiten. Aber mit dem Speichern ist noch nicht viel erreicht. Erst die Entwicklung eines Zugangs gibt den Kulturdaten einen Wert.</p>
@@ -89,7 +105,6 @@
             <p>Team: Christian Bromann, Thomas Fett, Marius Förster, Knut Perseke.</p>
         </div>
     </footer>
-
     <script src="javascripts/index.js"></script>
 </body>
 </html>

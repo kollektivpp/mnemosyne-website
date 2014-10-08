@@ -2,33 +2,67 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
+    max-width: 1000px;
 
     .logo {
-        width: 142px;
-        height: 142px;
+        width: 114px;
+        height: 124px;
+        margin-top: 10px;
+        margin-left: 10px;
+        @media (min-width: 615px) {
+            margin-left: 20px;
+        }
+        @media (min-width: 800px) {
+            margin-left: 30px;
+        }
         background-image: url('../images/logo.png');
         background-repeat: no-repeat;
         background-size: 100%;
-        @include transition(width 0.2s linear, height 0.2s linear);
+        @include transition(width 0.3s ease-out, height 0.3s ease-out);
 
         &.small {
-            width: 71px;
-            height: 71px;
+            width: 57px;
+            height: 62px;
         }
     }
 
     .button-info {
         position: absolute;
         top: 10px;
-        right: 10px;
-        width: 29px;
-        height: 29px;
-        background-image: url('../images/info_icon.png');
+        right: 55px;
+        width: 23px;
+        height: 23px;
+        background-image: url('../images/icon_info.png');
         background-repeat: no-repeat;
         background-size: 100%;
+
+        @media (min-width: 615px) {
+            right: 65px;
+        }
+        @media (min-width: 800px) {
+            right: 75px;
+        }
     }
 
     .button-mail {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 23px;
+        background-image: url('../images/icon_mail.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
 
+        @media (min-width: 615px) {
+            right: 20px;
+        }
+        @media (min-width: 800px) {
+            right: 30px;
+        }
+    }
+
+    a {
+        text-decoration: none;
     }
 }

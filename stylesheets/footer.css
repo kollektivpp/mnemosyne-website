@@ -1,19 +1,20 @@
 /*
 Error: Undefined variable: "$colorBackgroundFooter".
-        on line 4 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss
+        on line 5 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss
 
 1: footer {
 2:     position: fixed;
 3:     bottom: 0px;
-4:     background-color: $colorBackgroundFooter;
-5: 
-6:     @include transition(bottom 0.3s ease-in-out);
-7: 
-8:     &.hidden {
-9:         // This default value should be overwritten by JS on page load
+4:     width: 100%;
+5:     background-color: $colorBackgroundFooter;
+6: 
+7:     @include transition(bottom 0.3s ease-in-out);
+8: 
+9:     &.hidden {
+10:         // This default value should be overwritten by JS on page load
 
 Backtrace:
-/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss:4
+/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss:5
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:378:in `visit_prop'
@@ -68,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorBackgroundFooter\".\A         on line 4 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss\A \A 1: footer {\A 2:     position: fixed;\A 3:     bottom: 0px;\A 4:     background-color: $colorBackgroundFooter;\A 5: \A 6:     @include transition(bottom 0.3s ease-in-out);\A 7: \A 8:     &.hidden {\A 9:         // This default value should be overwritten by JS on page load"; }
+  content: "Error: Undefined variable: \"$colorBackgroundFooter\".\A         on line 5 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss\A \A 1: footer {\A 2:     position: fixed;\A 3:     bottom: 0px;\A 4:     width: 100%;\A 5:     background-color: $colorBackgroundFooter;\A 6: \A 7:     @include transition(bottom 0.3s ease-in-out);\A 8: \A 9:     &.hidden {\A 10:         // This default value should be overwritten by JS on page load"; }

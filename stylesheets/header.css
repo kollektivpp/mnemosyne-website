@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'transition'.
-        on line 12 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss, in `transition'
-        from line 12 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss
+        on line 21 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss, in `transition'
+        from line 21 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss
 
-7:         width: 142px;
-8:         height: 142px;
-9:         background-image: url('../images/logo.png');
-10:         background-repeat: no-repeat;
-11:         background-size: 100%;
-12:         @include transition(width 0.2s linear, height 0.2s linear);
-13: 
-14:         &.small {
-15:             width: 71px;
-16:             height: 71px;
+16:             margin-left: 30px;
 17:         }
+18:         background-image: url('../images/logo.png');
+19:         background-repeat: no-repeat;
+20:         background-size: 100%;
+21:         @include transition(width 0.3s ease-out, height 0.3s ease-out);
+22: 
+23:         &.small {
+24:             width: 57px;
+25:             height: 62px;
+26:         }
 
 Backtrace:
-/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss:12:in `transition'
-/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss:12
+/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss:21:in `transition'
+/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss:21
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:332:in `block in visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
@@ -85,4 +85,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 12 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss, in `transition'\A         from line 12 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss\A \A 7:         width: 142px;\A 8:         height: 142px;\A 9:         background-image: url('../images/logo.png');\A 10:         background-repeat: no-repeat;\A 11:         background-size: 100%;\A 12:         @include transition(width 0.2s linear, height 0.2s linear);\A 13: \A 14:         &.small {\A 15:             width: 71px;\A 16:             height: 71px;\A 17:         }"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 21 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss, in `transition'\A         from line 21 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/header.scss\A \A 16:             margin-left: 30px;\A 17:         }\A 18:         background-image: url('../images/logo.png');\A 19:         background-repeat: no-repeat;\A 20:         background-size: 100%;\A 21:         @include transition(width 0.3s ease-out, height 0.3s ease-out);\A 22: \A 23:         &.small {\A 24:             width: 57px;\A 25:             height: 62px;\A 26:         }"; }

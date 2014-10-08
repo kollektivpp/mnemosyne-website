@@ -1,44 +1,93 @@
 section {
 
+    // Prevent overlapping of logo and headline on small screens
+    &:first-of-type {
+        @media (max-width: 537px) {
+            margin-top: 170px;
+
+            h1.first-headline,
+            h2 {
+                max-width: 80%;
+                margin-left: 10%;
+            }
+        }
+    }
+
     margin-top: 20px;
     margin-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
 
+    @media (min-width: 615px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media (min-width: 800px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     h1 {
-        @include fontMonoYellow(28px, 28px);
+        @include fontMonoYellow(30px, 30px);
         text-align: center;
         padding-bottom: 30px;
         text-transform: uppercase;
 
-        max-width: 50%;
-        margin-left: 25%;
+        @media (max-width: 537px) {
+            @include fontMonoYellow(28px, 28px);
+        }
 
         &.first-headline {
-            @include fontMonoWhite(28px, 28px);
+            @include fontMonoWhite(30px, 30px);
+            text-align: left;
             max-width: 60%;
+            margin-left: 25%;
+
+            @media (max-width: 537px) {
+                @include fontMonoWhite(28px, 28px);
+            }
         }
     }
 
     h2 {
-        @include fontSansYellow(16px, 19px);
+        @include fontSansYellow(18px, 21px);
         margin-bottom: 30px;
         max-width: 65%;
         margin-left: 25%;
+
+        @media (max-width: 537px) {
+            @include fontSansYellow(16px, 19px);
+        }
+    }
+
+    .flex-wrapper {
+        @include display-flex(inline-flex);
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(flex-start);
+
+        @media (min-width: 615px) {
+            @include flex-direction(row);
+        }
+
     }
 
     .text-wrapper {
-        float: left;
-
         @media (min-width: 615px) {
-            width: 35%;
-            min-width: 200px;
+            max-width: 50%;
+        }
+        @media (min-width: 800px) {
+            max-width: 33%;
         }
     }
 
     p {
         @include fontSansWhite(14px, 17px);
         margin-bottom: 8px;
+
+        @media (max-width: 537px) {
+            @include fontSansWhite(14px, 17px);
+        }
 
         a {
             text-decoration: none;
@@ -50,7 +99,10 @@ section {
         width: 100%;
 
         @media (min-width: 615px) {
-            width: 65%;
+            min-width: 280px;
+        }
+        @media (min-width: 800px) {
+            min-width: 400px;
         }
     }
 }

@@ -2,11 +2,23 @@
 /** FONTS **/
 /** BASIC ELEMENTS **/
 /* line 43, ../sass/index.scss */
+* {
+  -webkit-text-size-adjust: none;
+}
+
+/* line 47, ../sass/index.scss */
 html {
   background-color: #000000;
 }
 
-/* line 48, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 body {
-  padding-top: 10px;
+  width: 100%;
+}
+
+/* line 56, ../sass/index.scss */
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
 }

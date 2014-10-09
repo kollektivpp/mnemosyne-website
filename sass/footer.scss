@@ -2,9 +2,57 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    padding: 35px 0 30px;
     background-color: $colorBackgroundFooter;
+    @include box-shadow(0px -20px 25px black);
+
+    @media (max-width: 480px) {
+        padding: 10px 0 10px;
+        max-height: 200px;
+        overflow: scroll;
+    }
 
     @include transition(bottom 0.3s ease-in-out);
+
+    .footer-icon {
+        @media (min-width: 870px) {
+            width: 61px;
+            height: 61px;
+            background-image: url('../images/icon_info_black.png');
+            background-size: 100%;
+            position: absolute;
+            top: 35px;
+            left: 20px;            
+        }
+    }
+
+    .footer-content {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .flex-wrapper {
+        width: 100%;
+        max-width: 700px;
+        @include display-flex(inline-flex);
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(flex-start);
+
+        @media (min-width: 615px) {
+            @include flex-direction(row);
+        }
+    }
+
+    .text-block {
+        padding: 0 16px;
+        text-align: justify;
+    }
+
+    p {
+        margin-bottom: 12px;
+        @include fontMonoBlack(12px, 15px);
+    }
 
     &.hidden {
         // This default value should be overwritten by JS on page load

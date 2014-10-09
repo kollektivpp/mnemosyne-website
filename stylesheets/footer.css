@@ -1,20 +1,21 @@
 /*
 Error: Undefined variable: "$colorBackgroundFooter".
-        on line 5 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss
+        on line 6 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss
 
 1: footer {
 2:     position: fixed;
 3:     bottom: 0px;
 4:     width: 100%;
-5:     background-color: $colorBackgroundFooter;
-6: 
-7:     @include transition(bottom 0.3s ease-in-out);
+5:     padding: 35px 0 30px;
+6:     background-color: $colorBackgroundFooter;
+7:     @include box-shadow(0px -20px 25px black);
 8: 
-9:     &.hidden {
-10:         // This default value should be overwritten by JS on page load
+9:     @media (max-width: 480px) {
+10:         padding: 10px 0 10px;
+11:         max-height: 200px;
 
 Backtrace:
-/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss:5
+/Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss:6
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:378:in `visit_prop'
@@ -69,4 +70,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorBackgroundFooter\".\A         on line 5 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss\A \A 1: footer {\A 2:     position: fixed;\A 3:     bottom: 0px;\A 4:     width: 100%;\A 5:     background-color: $colorBackgroundFooter;\A 6: \A 7:     @include transition(bottom 0.3s ease-in-out);\A 8: \A 9:     &.hidden {\A 10:         // This default value should be overwritten by JS on page load"; }
+  content: "Error: Undefined variable: \"$colorBackgroundFooter\".\A         on line 6 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/footer.scss\A \A 1: footer {\A 2:     position: fixed;\A 3:     bottom: 0px;\A 4:     width: 100%;\A 5:     padding: 35px 0 30px;\A 6:     background-color: $colorBackgroundFooter;\A 7:     @include box-shadow(0px -20px 25px black);\A 8: \A 9:     @media (max-width: 480px) {\A 10:         padding: 10px 0 10px;\A 11:         max-height: 200px;"; }

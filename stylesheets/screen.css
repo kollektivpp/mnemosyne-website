@@ -255,6 +255,10 @@ footer p {
   line-height: 15px;
 }
 /* line 57, ../sass/footer.scss */
+footer a {
+  color: #000000;
+}
+/* line 61, ../sass/footer.scss */
 footer.hidden {
   bottom: -330px;
 }
@@ -298,8 +302,9 @@ section h1 {
   font-size: 30px;
   color: #fff34f;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   padding-bottom: 30px;
+  padding-left: 6px;
   text-transform: uppercase;
 }
 @media (max-width: 537px) {
@@ -311,7 +316,7 @@ section h1 {
     line-height: 28px;
   }
 }
-/* line 40, ../sass/content.scss */
+/* line 41, ../sass/content.scss */
 section h1.first-headline {
   font-family: Fira Mono, Mono;
   font-size: 30px;
@@ -322,7 +327,7 @@ section h1.first-headline {
   margin-left: 25%;
 }
 @media (max-width: 537px) {
-  /* line 40, ../sass/content.scss */
+  /* line 41, ../sass/content.scss */
   section h1.first-headline {
     font-family: Fira Mono, Mono;
     font-size: 28px;
@@ -331,12 +336,12 @@ section h1.first-headline {
   }
 }
 @media (min-width: 800px) {
-  /* line 40, ../sass/content.scss */
+  /* line 41, ../sass/content.scss */
   section h1.first-headline {
     max-width: 50%;
   }
 }
-/* line 55, ../sass/content.scss */
+/* line 56, ../sass/content.scss */
 section h2 {
   font-family: Fira Sans, Sans;
   font-size: 18px;
@@ -347,7 +352,7 @@ section h2 {
   margin-left: 25%;
 }
 @media (max-width: 537px) {
-  /* line 55, ../sass/content.scss */
+  /* line 56, ../sass/content.scss */
   section h2 {
     font-family: Fira Sans, Sans;
     font-size: 16px;
@@ -355,7 +360,7 @@ section h2 {
     line-height: 19px;
   }
 }
-/* line 66, ../sass/content.scss */
+/* line 67, ../sass/content.scss */
 section .flex-wrapper {
   display: -webkit-inline-flex;
   display: inline-flex;
@@ -367,25 +372,25 @@ section .flex-wrapper {
   align-items: flex-start;
 }
 @media (min-width: 615px) {
-  /* line 66, ../sass/content.scss */
+  /* line 67, ../sass/content.scss */
   section .flex-wrapper {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
 @media (min-width: 615px) {
-  /* line 78, ../sass/content.scss */
+  /* line 79, ../sass/content.scss */
   section .text-wrapper {
     max-width: 45%;
   }
 }
 @media (min-width: 800px) {
-  /* line 78, ../sass/content.scss */
+  /* line 79, ../sass/content.scss */
   section .text-wrapper {
     max-width: 33%;
   }
 }
-/* line 87, ../sass/content.scss */
+/* line 88, ../sass/content.scss */
 section p {
   font-family: Fira Sans, Sans;
   font-size: 14px;
@@ -394,7 +399,7 @@ section p {
   margin-bottom: 8px;
 }
 @media (max-width: 537px) {
-  /* line 87, ../sass/content.scss */
+  /* line 88, ../sass/content.scss */
   section p {
     font-family: Fira Sans, Sans;
     font-size: 14px;
@@ -402,52 +407,68 @@ section p {
     line-height: 17px;
   }
 }
-/* line 95, ../sass/content.scss */
+/* line 96, ../sass/content.scss */
 section p a {
   text-decoration: none;
   color: #fff34f;
 }
 @media (min-width: 615px) {
-  /* line 101, ../sass/content.scss */
+  /* line 102, ../sass/content.scss */
   section .image-wrapper {
     padding-left: 30px;
   }
 }
-/* line 107, ../sass/content.scss */
+/* line 109, ../sass/content.scss */
 section .image-wrapper.wheel img:nth-child(1) {
   width: 30%;
   margin-bottom: -27%;
   min-width: 1px;
 }
-/* line 113, ../sass/content.scss */
+/* line 115, ../sass/content.scss */
 section .image-wrapper.wheel img:nth-child(2) {
   width: 85%;
   float: right;
   margin-top: 5%;
   right: 0px;
 }
-/* line 122, ../sass/content.scss */
+/* line 124, ../sass/content.scss */
+section .image-wrapper.overview img:nth-child(1) {
+  width: 40%;
+  margin-bottom: -27%;
+  min-width: 1px;
+  float: right;
+}
+/* line 130, ../sass/content.scss */
+section .image-wrapper.overview img:nth-child(2) {
+  width: 70%;
+  margin-top: -30%;
+}
+/* line 137, ../sass/content.scss */
 section img {
   width: 100%;
 }
 @media (min-width: 615px) {
-  /* line 122, ../sass/content.scss */
+  /* line 137, ../sass/content.scss */
   section img {
     min-width: 280px;
   }
 }
 @media (min-width: 800px) {
-  /* line 122, ../sass/content.scss */
+  /* line 137, ../sass/content.scss */
   section img {
     min-width: 400px;
   }
 }
-/* line 132, ../sass/content.scss */
+/* line 147, ../sass/content.scss */
 section img.screenshot {
   margin-top: -10px;
 }
-/* line 136, ../sass/content.scss */
+/* line 151, ../sass/content.scss */
 section img.border {
   border: #fff34f solid 2px;
   box-sizing: border-box;
+}
+/* line 156, ../sass/content.scss */
+section img.bottom-skip {
+  margin-bottom: 16px;
 }

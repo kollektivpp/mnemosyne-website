@@ -9,11 +9,11 @@ Error: Undefined mixin 'fontMonoYellow'.
 29: 
 30:     h1 {
 31:         @include fontMonoYellow(30px, 30px);
-32:         text-align: center;
+32:         text-align: left;
 33:         padding-bottom: 30px;
-34:         text-transform: uppercase;
-35: 
-36:         @media (max-width: 537px) {
+34:         padding-left: 6px;
+35:         text-transform: uppercase;
+36: 
 
 Backtrace:
 /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/content.scss:31:in `fontMonoYellow'
@@ -85,4 +85,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'fontMonoYellow'.\A         on line 31 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/content.scss, in `fontMonoYellow'\A         from line 31 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/content.scss\A \A 26:         padding-left: 30px;\A 27:         padding-right: 30px;\A 28:     }\A 29: \A 30:     h1 {\A 31:         @include fontMonoYellow(30px, 30px);\A 32:         text-align: center;\A 33:         padding-bottom: 30px;\A 34:         text-transform: uppercase;\A 35: \A 36:         @media (max-width: 537px) {"; }
+  content: "Error: Undefined mixin 'fontMonoYellow'.\A         on line 31 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/content.scss, in `fontMonoYellow'\A         from line 31 of /Users/thomasfett/Documents/Projects/mnemosyne-website/sass/content.scss\A \A 26:         padding-left: 30px;\A 27:         padding-right: 30px;\A 28:     }\A 29: \A 30:     h1 {\A 31:         @include fontMonoYellow(30px, 30px);\A 32:         text-align: left;\A 33:         padding-bottom: 30px;\A 34:         padding-left: 6px;\A 35:         text-transform: uppercase;\A 36: "; }

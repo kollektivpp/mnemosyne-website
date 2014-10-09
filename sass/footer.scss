@@ -54,6 +54,10 @@ footer {
         @include fontMonoBlack(12px, 15px);
     }
 
+    a {
+        color: $colorTextBlack;
+    }
+
     &.hidden {
         // This default value should be overwritten by JS on page load
         bottom: -330px;

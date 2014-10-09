@@ -29,8 +29,9 @@ section {
 
     h1 {
         @include fontMonoYellow(30px, 30px);
-        text-align: center;
+        text-align: left;
         padding-bottom: 30px;
+        padding-left: 6px;
         text-transform: uppercase;
 
         @media (max-width: 537px) {
@@ -99,6 +100,7 @@ section {
     }
 
     .image-wrapper {
+
         @media (min-width: 615px) {
             padding-left: 30px;
         }
@@ -116,6 +118,19 @@ section {
                 margin-top: 5%;
                 right: 0px;
             }
+        }
+
+        &.overview {
+            img:nth-child(1) {
+                width: 40%;
+                margin-bottom: -27%;
+                min-width: 1px;
+                float: right;
+            }
+            img:nth-child(2) {
+                width: 70%;
+                margin-top: -30%;
+            }  
         }
     }
 
@@ -136,6 +151,10 @@ section {
         &.border {
             border: $colorTextYellow solid 2px;
             box-sizing: border-box;
+        }
+
+        &.bottom-skip {
+            margin-bottom: 16px;
         }
     }
 }
